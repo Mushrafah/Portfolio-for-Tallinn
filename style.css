@@ -1,0 +1,147 @@
+* {
+    width: auto;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+  .container {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navigation {
+    background-color: #242526;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-family: Tahoma;
+    position: fixed;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  .navi {
+    background-color: #242526;
+    margin: 20px 20px;
+    cursor: pointer;
+  .navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  a {
+   @@ -35,18 +52,28 @@ a:hover {
+  }
+  
+  .artist {
+    padding-top: 59px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 125, 158);
+  }
+  
+  .artist .imgWrapper {
+    position: relative;
+    height: 90vh;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .artist .imgWrapper img {
+    max-width: 486px;
+  }
+  
+  .onimg {
+    font-size: 30px;
+    position: absolute;
+    top: 300px;
+    left: 555px;
+    top: 200px;
+    left: 100px;
+    color: white;
+    text-shadow: 1px 1px 5px orange;
+  }
+   @@ -76,6 +103,10 @@ h2 p {
+    font-size: 23px;
+  }
+  
+  .myTunesImg {
+    max-width: 100%;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+   @@ -121,14 +152,43 @@ footer {
+    padding-top: 10px;
+  }
+  
+  @media (max-width: 991.98px) {
+  @media screen and (max-width: 1100px) {
+    .container {
+      max-width: 768px;
+    }
+    .onimg {
+      display: none;
+    }
+    .myTunesImg {
+      width: 30rem;
+    /* .myTunesImg {
+      width: -webkit-fill-available;
+    } */
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+    .artist .imgWrapper img {
+      width: 425px;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .container {
+      padding: 0 15px;
+    }
+    .artist .imgWrapper {
+      max-width: 100%;
+    }
+    .image {
+      width: fit-content;
+  }
+  @media screen and (max-width: 486px) {
+    .artist .imgWrapper {
+      height: 80vh;
+    }
+    .artist .imgWrapper img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .artist .imgWrapper {
+      min-width: 320px;
+    }
+  }
